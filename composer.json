@@ -1,0 +1,13 @@
+{
+    "autoload": {
+      "psr-4": {
+        "Server\\":"Server"
+      },
+      "files": [
+        "Server/Config/Config.php"
+      ]
+    },
+    "require": {
+        
+    }
+  }

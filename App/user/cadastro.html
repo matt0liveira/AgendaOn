@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+    <main>
+        <section id="section-text">
+            <div id="logo" class="logo">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <h1>AgendaOn</h1>
+            </div>     
+            <p class="subtitulo">App de agendamento</p>
+            <div class="container">
+                <i class="fa fa-check" aria-hidden="true"></i>
+                <p>Crie uma conta gratuita</p>
+            </div>
+            <div class="container">
+                <i class="fa fa-check" aria-hidden="true"></i>
+                <p>Faça parte da nossa comunidade</p>
+            </div>
+        </section>
+        <section id="section-formCadastro">
+            <form enctype="multipart/form-data" id="formCadastro">
+                <div class="cabecalho">
+                    <a href="index.html" id="btnVoltar"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+                    <h1>Crie uma conta</h1>
+                </div>
+                <hr>
+                <div class="field-img">
+                    <img src="../admin/img/user.png" id="img-user">
+                    <label for="foto" class="custom-file-upload">
+                        <input type="file" name="foto" id="foto"/>
+                        <i class="fa fa-upload" aria-hidden="true"></i>
+                        <p>Upload</p>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="nome">Nome*</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Nº de telefone*</label>
+                    <input type="tel" class="form-control" id="tel" name="telefone" maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}" placeholder="(00)12345-6789" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="email" placeholder="seunome@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha*</label>
+                    <input type="password" name="senha" id="senha" placeholder="********" required class="inputSenha">
+                    <button class="btnVerSenha fa fa-eye-slash" arial-hidden="true" onclick="return false;"></button>
+                </div>
+                <div class="form-group">
+                    <label for="confirmSenha">Confirme sua senha*</label>
+                    <input type="password" name="confirmSenha" id="confirmSenha" placeholder="********" required class="inputSenha">
+                    <button class="btnVerSenha fa fa-eye-slash" arial-hidden="true" onclick="return false;"></button>
+                </div>
+                <div class="btn-group">
+                    <button type="submit" id="btn-cadastrar" class="btn-cadastrar"><i class="fa fa-plus" aria-hidden="true"></i> Cadastrar</button>
+                    <a href="../admin/login.html"><i class="fa fa-user" aria-hidden="true"></i> Sou admin</a>
+                    <p>Já possui uma conta?</p><a href="login.html" id="btn-login">Faça login</a>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.10/dist/sweetalert2.all.min.js"></script>
+<script src="https://use.fontawesome.com/765bf1c0fd.js"></script>
+<script src="js/Ajax.js"></script>
+<script src="js/Cliente.js"></script>
+<script src="js/cadastro.js"></script>
+</html>

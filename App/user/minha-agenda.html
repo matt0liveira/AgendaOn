@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha agenda</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header>
+        <i id="logo" class="fa fa-calendar" aria-hidden="true"></i>
+        <h2 class="title-logo">AgendaOn</h2>
+    </header>
+    <nav id="navbar" class="navbar">
+        <a href="home.html">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span class="title-item">Home</span>
+        </a>
+        <a href="agendar.html">
+            <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+            <span class="title-item">Agendar</span>
+        </a>
+        <a href="minha-agenda.html" class="style-selected">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <span class="title-item">agenda</span>
+        </a>
+        <a href="perfil.html">
+            <i class="fa fa-user-o" aria-hidden="true"></i>
+            <span class="title-item">Perfil</span>
+        </a>
+        <button id="btnLogout" class="logout" onclick="logoutClick()">
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+            <span class="title-item">Sair</span>
+        </button>
+    </nav>
+    <main class="container">
+        <section class="box-general"></section>
+    </main>
+    <div id="box-modal" class="box-modal invisible"></div>
+    <form class="form-edit invisible">
+        <div class="form-head">
+            <h1>Alterar agendamento</h1>
+        </div>
+        <hr>
+        <input type="hidden" name="idagendamento" id="idagendamento">
+        <div class="form-group">
+            <label for="data">Data</label>
+            <input type="date" name="data" id="data" required>
+        </div>
+        <div class="form-group">
+            <label for="horario">Horário</label>
+            <select name="horario" id="horario" required></select>
+        </div>
+        <div class="form-group">
+            <label for="servico">Serviço</label>
+            <select name="fkservico" id="servico" required></select>                
+        </div>
+        <div class="form-group">
+            <label for="fkfuncionario">Profissional</label>
+            <select name="fkfuncionario" id="profissional"></select>
+        </div>
+        <div class="btn-group">
+            <button type="submit" class="btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i>Confirmar</button>
+            <button type="reset"><i class="fa fa-times" aria-hidden="true"></i>Cancelar</button>
+        </div>
+        <button id="btn-close" class="btn-close" onclick="return false"><i class="fa fa-times" aria-hidden="true"></i></button>
+    </form>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.10/dist/sweetalert2.all.min.js"></script>
+<script src="https://use.fontawesome.com/765bf1c0fd.js"></script>
+<script src="js/Ajax.js"></script>
+<script src="js/Minha-Agenda.js"></script>
+</html>

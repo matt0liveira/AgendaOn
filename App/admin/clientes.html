@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel administrativo - Perfil</title>
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://use.fontawesome.com/765bf1c0fd.js"></script>
+</head>
+<body>
+    <header>
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+        <h2 class="title-logo">AgendaOn</h2>
+    </header>
+    <nav id="navbar" class="navbar">
+        <a href="home.html">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span class="title-item">Home</span>
+        </a>
+        <a href="agenda.html">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <span class="title-item">Agenda</span>
+        </a>
+        <a href="funcionario.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <span class="title-item">funcionário</span>
+        </a>
+        <a href="servico.html">
+            <i class="fa fa-scissors" aria-hidden="true"></i>
+            <span class="title-item">serviço</span>
+        </a>
+        <a href="horario_atendimento.html">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <span class="title-item">horário atendimento</span>
+        </a>
+        <a href="clientes.html" class="style-selected">
+            <i class="fa fa-users" aria-hidden="true"></i>
+            <span class="title-item">cliente</span>
+        </a>
+        <a href="#" id="btnLogout" class="logout">
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+            <span class="title-item">Sair</span>
+        </a>
+    </nav>
+    <main class="container">
+        <section class="box">
+            <form action="" class="forms-search">
+                <div class="field-search">
+                    <input type="search" name="search_nome" id="search_nome" placeholder="Buscar por nome">
+                    <button class="btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+            </form>
+            <div class="box-list">
+                <div class="preview-register">
+                    <label for="nome" class="title-register">Título</label>
+                    <button class="btn-view">Ver mais</button>
+                </div>
+                <hr>
+                <div id="details-cliente" class="details-register">
+                    <div class="field-profile">
+                        <img src="img/user.png" alt="">
+                        <h3>Matheus Oliveira</h3>
+                    </div>
+                    <div class="field-list">
+                        <label for=""><i class="fa fa-envelope-o" aria-hidden="true"></i>E-mail:</label>
+                        <p>matheus4004.mo33@gmail.com</p>
+                    </div>
+                    <div class="field-list">
+                        <label for=""><i class="fa fa-phone" aria-hidden="true"></i>Telefone:</label>
+                        <p>(15)99754-4918</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="https://use.fontawesome.com/765bf1c0fd.js"></script>
+<script src="js/Cliente.js"></script>
+</html>

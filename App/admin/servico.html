@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel administrativo - Serviços</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header>
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+        <h2 class="title-logo">AgendaOn</h2>
+    </header>
+    <nav id="navbar" class="navbar">
+        <a href="home.html">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span class="title-item">Home</span>
+        </a>
+        <a href="agenda.html">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <span class="title-item">Agenda</span>
+        </a>
+        <a href="funcionario.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <span class="title-item">funcionario</span>
+        </a>
+        <a href="servico.html" class="style-selected">
+            <i class="fa fa-scissors" aria-hidden="true"></i>
+            <span class="title-item">serviço</span>
+        </a>
+        <a href="horario_atendimento.html">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <span class="title-item">horário atendimento</span>
+        </a>
+        <button id="btnLogout" class="logout">
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+            <span class="title-item">Sair</span>
+        </button>
+    </nav>
+
+    <main class="container">
+        <section class="box"></section>
+        <button id="btn-add" class="btn-add"><i class="fa fa-plus" aria-hidden="true"></i></button>
+    </main>
+
+    <div id="box-modal" class="box-modal invisible"></div>
+    <form enctype="multipart/form-data" id="modal-servico" class="modal-cadastro invisible">
+        <div class="form-header">
+            <h1 class="title-modal">Adicionar serviços</h1>
+        </div>
+        <hr>
+        <input type="hidden" name="idservico" id="idservico" value="NOVO VALOR">
+        <div class="form-group">
+            <label for="nome">Nome*</label>     
+            <input type="text" name="nome" id="nome" required>
+        </div>
+        <div class="form-group">
+            <label for="nome">Descrição</label>     
+            <textarea name="descricao" id="descricao"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="funcionario">Funcionário*</label>
+            <select name="fkfuncionario" id="fkfuncionario">
+                <option>Escolha um funcionário</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="duracao">Duração*</label>   
+            <select name="duracao" id="duracao" required>
+                <option value="30min">30 min</option>
+                <option value="45min">45 min</option>
+                <option value="60min">60 min</option>
+                <option value="75min">75 min</option>                
+                <option value="90min">90 min</option>                
+                <option value="105min">105 min</option>                
+                <option value="120min">120 min</option>    
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="preco">Preço*</label>     
+            <div class="field-preco">
+                <p>R$</p>
+                <input type="number" name="preco" id="preco" step=".01" min="0" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="">Foto do serviço</label>
+            <div class="field-foto">
+                <img src="img/img-default-servico.jpg" alt="" id="img-user" class="img-user">
+                <label for="foto" class="custom-file-upload">   
+                    <input type="file" name="foto" id="foto"/>
+                    <i class="fa fa-upload" aria-hidden="true"></i>
+                    Upload
+                </label>
+            </div>
+        </div>
+        <div class="field-btn">
+            <button type="submit" class="btn-submit"><i class="fa fa-plus" aria-hidden="true"></i>Cadastrar</button>
+            <button id="btn-cancel" type="reset"><i class="fa fa-times" aria-hidden="true"></i>Cancelar</button>
+        </div>
+        <button id="btn-close" class="btn-close" onclick="return false"><i class="fa fa-times" aria-hidden="true"></i></button>
+    </form>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.10/dist/sweetalert2.all.min.js"></script>
+<script src="https://use.fontawesome.com/765bf1c0fd.js"></script>
+<script src="js/Ajax.js"></script>
+<script src="js/main.js"></script>
+<script src="js/Servico.js"></script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel administrativo</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header>
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+        <h2 class="title-logo">AgendaOn</h2>
+    </header>
+    <nav id="navbar" class="navbar">
+        <a href="home.html">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span class="title-item">Home</span>
+        </a>
+        <a href="agenda.html" class="style-selected">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <span class="title-item">Agenda</span>
+        </a>
+        <a href="funcionario.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <span class="title-item">funcionario</span>
+        </a>
+        <a href="servico.html">
+            <i class="fa fa-scissors" aria-hidden="true"></i>
+            <span class="title-item">serviço</span>
+        </a>
+        <a href="horario_atendimento.html">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <span class="title-item">horário atendimento</span>
+        </a>
+        <button id="btnLogout" class="logout">
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+            <span class="title-item">Sair</span>
+        </button>
+    </nav>
+    <main class="container">
+        <section id="box-agenda"></section>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.10/dist/sweetalert2.all.min.js"></script>
+<script src="https://use.fontawesome.com/765bf1c0fd.js"></script>
+<script src="js/Ajax.js"></script>
+<script src="js/main.js"></script>
+<script src="js/Agenda.js"></script>
+</html>

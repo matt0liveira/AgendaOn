@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header>
+        <i id="logo" class="fa fa-calendar" aria-hidden="true"></i>
+        <h2 class="title-logo">AgendaOn</h2>
+    </header>
+    <nav id="navbar" class="navbar">
+        <a href="home.html" class="style-selected">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span class="title-item">Home</span>
+        </a>
+        <a href="agendar.html">
+            <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+            <span class="title-item">Agendar</span>
+        </a>
+        <a href="minha-agenda.html">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <span class="title-item">agenda</span>
+        </a>
+        <a href="perfil.html">
+            <i class="fa fa-user-o" aria-hidden="true"></i>
+            <span class="title-item">Perfil</span>
+        </a>
+        <button id="btnLogout" class="logout" onclick="logoutClick()">
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+            <span class="title-item">Sair</span>
+        </button>
+    </nav>
+
+    <main class="container">
+        <section id="box-home">
+            <a href="agendar.html" id="btn-agendar">
+                <i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
+                <span class="title-btn">Agendar</span>
+            </a>
+            <a href="minha-agenda.html" id="btn-agenda">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <span class="title-btn">Minha agenda</span>
+            </a>
+            <a href="perfil.html" id="btn-perfil">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span class="title-btn">Perfil</span>
+            </a>
+        </section>  
+    </main>
+</body>
+<script src="https://use.fontawesome.com/765bf1c0fd.js"></script>
+<script src="js/Ajax.js"></script>
+<script src="js/Cliente.js"></script>
+<script src="js/Home.js"></script>
+</html>

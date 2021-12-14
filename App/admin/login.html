@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Painel administrativo</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <main>
+        <section id="section-text">
+            <div id="logo" class="logo">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <h1>AgendaOn</h1>
+            </div>            
+            <p>App de agendamento</p>
+            <div class="container">
+                <i class="fa fa-check" aria-hidden="true"></i>
+                <p>Cadastre os seus serviços</p>
+            </div>
+            <div class="container">
+                <i class="fa fa-check" aria-hidden="true"></i>
+                <p>Tenha uma melhor gestão do seu negócio</p>
+            </div>
+            <div class="container">
+                <i class="fa fa-check" aria-hidden="true"></i>
+                <p>Controle melhor a sua agenda</p>
+            </div>
+        </section>
+        <section id="section-formLogin">
+            <form id="formsLogin">
+                <div class="cabecalho">
+                    <h3>Acesse o painel administrativo</h3>
+                    <a href="../user/login.html" id="btnVoltar"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <div class="input-group">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="email" name="email" id="email" placeholder="seunome@email.com" required>
+                    </div>                    
+                </div>                
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <div class="input-group">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" name="senha" id="senha" placeholder="********" required>
+                        <button id="btnVerSenha" class="fa fa-eye-slash" arial-hidden="true" onclick="return false;"></button>
+                    </div>          
+                </div>
+                <div class="btn-group">
+                    <button id="btn-logar"><i class="fa fa-sign-in" aria-hidden="true"></i>Entrar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.10/dist/sweetalert2.all.min.js"></script>
+<script src="https://use.fontawesome.com/765bf1c0fd.js"></script>
+<script src="js/Ajax.js"></script>
+<script src="js/Admin.js"></script>
+<script src="js/login.js"></script>
+</html>
